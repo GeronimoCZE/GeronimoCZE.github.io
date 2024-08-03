@@ -10,7 +10,23 @@ document.addEventListener("DOMContentLoaded", function () {
                 top: targetElement.offsetTop,
                 behavior: 'smooth'
             });
+
+            // Close the mobile menu after clicking a link
+            if (window.innerWidth <= 768) {
+                document.getElementById('nav-links').style.display = 'none';
+            }
         });
+    });
+
+     // Mobile menu toggle
+    const menuIcon = document.getElementById('menu-icon');
+    const navLinksContainer = document.getElementById('nav-links');
+    menuIcon.addEventListener('click', function () {
+        if (navLinksContainer.style.display === 'flex') {
+            navLinksContainer.style.display = 'none';
+        } else {
+            navLinksContainer.style.display = 'flex';
+        }
     });
 
     // Reveal animation on scroll
