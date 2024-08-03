@@ -1,2 +1,2 @@
 # GeronimoCZE.github.io
-Personal website
+Personal website created by Nikolas Malík
