@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const elementTop = el.getBoundingClientRect().top;
             if (elementTop < windowHeight - 100) {
                 el.classList.add('active');
-                // Remove the reveal class to prevent the animation from running again
-                el.classList.remove('reveal');
+            } else {
+
             }
         });
     };
